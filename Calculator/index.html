@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator dark ">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display">
+
+                </div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn btn-operator" onclick="clr()" id="clear">C</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator"  onclick="calc('/')"  id="/">&divide;</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator" onclick="calc('*')" id="*">&times;</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator" onclick="backspace()">
+                                < </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('7')" id="7">7</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('8')" id="8">8</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('9')" id="9">9</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator" onclick="calc('-')" id="-">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('4')" id="4">4</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('5')" id="5">5</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('6')" id="6">6</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator" onclick="calc('+')" id="+">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('1')" id="1">1</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('2')" id="2">2</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('3')" id="3">3</button>
+                        </td>
+                        <td rowspan="2">
+                            <button  class="btn btn-equal" onclick="sol()" id="equal">=</button>
+                        </td>
+                    </tr>                    <tr>
+                        <td>
+                            <button class="btn btn-operator" onclick="calc('')" id="(">(</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-number" onclick="calc('0')" id="0">0</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-operator" onclick="calc()" id=")">)</button>
+                        </td>
+                    </tr>
+                    
+
+
+                </table>
+            </div>
+        </div>
+        <!-- <h1 id="trademark">
+            All copy rights reserved to A-One Acadamy of Education
+        </h1> -->
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

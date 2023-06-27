@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            transition: all 0.5s ease;
+        }
+
+        body {
+            height: 80%;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1), rgba(210, 53, 165));
+            min-width: 650px;
+            background-repeat: no-repeat;
+        }
+
+        button {
+            height: 60px;
+            width: 60px;
+            font-weight: 900;
+            font-size: 20px;
+            border: none;
+            border-radius: 30%;
+            margin: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background-color: #ffd0fd;
+            color: #f967f3;
+
+        }
+
+        button:active {
+            border: solid;
+            box-shadow: 0 0 30px #f967f3;
+
+        }
+
+        button:hover {
+            /* font-size: 20px; */
+            transform: scale(1.15);
+        }
+
+        .container {
+
+            /* display: inline-block; */
+            border: none;
+            background: #fff;
+            align-items: center;
+            text-align: center;
+
+            justify-content: center;
+            border-radius: 40px;
+            /* border: 1px solid black; */
+            width: 300px;
+            /*  */
+            padding: 25px;
+
+        }
+
+        .main-container {
+            border: 1px solid #f967f3;
+            /*  */
+            box-shadow: 0 0 30px rgb(0, 0, 0);
+            border-radius: 40px;
+            display: flex;
+            gap: 30px;
+            /* padding-left: 150px; */
+            overflow: hidden;
+            width: 600px;
+            height: 220px;
+            margin: 220px auto;
+        }
+
+        hr {
+            background-color: #f967f3;
+            border: 3px solid #f967f3;
+            border-radius: 3px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f967f3
+        }
+
+        #trademark {
+            left: 50%;
+            top: 95%;
+            transform: translate(-50%, -50%);
+            text-decoration: double;
+            color: black;
+            font-size: 12px;
+            /* righ; */
+            /* border: 1px solid black; */
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div style="padding: 45px 0 0 35px;">
+            <hr>
+            <h1>Increment and Decrement Counter</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <h1 id="label">0
+            </h1>
+
+            <button onclick="motu()">+</button>
+            <button onclick="patlu()">-</button>
+            <button onclick="clr()">Clear</button>
+        </div>
+
+        <h1 id="trademark">
+            All rights reserved to A-One Acadamy of Education
+        </h1>
+    </div>
+    <script src="app.js">
+
+
+    </script>
+</body>
+
+</html>
